@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>SKML</title>
+ <style>
+           
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fafaf7;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;     
+    object-fit:cover;
+}
+
+.navbar{
+background:goldenrod;
+height:80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 60px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.banner{
+padding:35px 60px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.card{
+cursor:pointer;
+border-radius: 18px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:18px;
+}
+
+
+.name{
+font-size:22px;
+font-weight:600;
+margin-top:10px;
+}
+
+.rating{
+color:green;
+font-weight:600;
+margin-top:5px;
+}
+
+
+
+@media(max-width:1100px){
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:700px){
+
+header{
+padding:20px;
+}
+
+nav{
+display:none;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+} 
+
+.container{
+width:90%;
+margin: auto;
+}
+
+.btn{
+    color:goldenrod;
+    align-items:center;
+    width:200px;
+    height:50px;
+    font-size:20px;
+}
+
+
+</style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" class="logo" alt="SKML logo">
+            <h1>SKML FAMILY DHABA</h1>
+           </div>
+         <button class="btn" onclick="window.location.href='offer.html';">Offer of the day</button>
+        </div>
+        <div class="banner"></div> 
+          <h1 style="text-align: center; font-family: 'Brush Script MT', cursive; font-size: 80px;">Vegetarian Options</h1><br><br>
+
+        <div class="container">
+
+           <h2>ALL VEGETARIAN ITEMS</h2><br><br>
+
+            <div class="cards">
+
+               <div class="card">
+               <h3>VEGETARIAN THALI</h3>
+               <img src="thali.avif" alt="">
+               <div style="font-size:20px;">ITEM AT ₹99</div>
+               <div>SOUTH INDIAN THALI</div>
+               <div class="rating">⭐ 4.3 • 5.0</div>
+               </div>
+
+               <div class="card"> </div>
+               <div class="card"> </div><br><br><br>
+               
+               <div class="card">
+                <h3>VEGETARIAN CURRIES</h3><br><br>
+                <img src="panner.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹240</div>
+                <div>PANEER</div>
+                <div class="rating">⭐ 4.8 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="cp.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹280</div>
+                <div>CASHEW PANEER</div>
+                <div class="rating">⭐ 4.8 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="C.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹250</div>
+                <div>CASHEW</div>
+                <div class="rating">⭐ 5.0 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="D.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹80</div>
+                <div>DHAL</div>
+                <div class="rating">⭐ 4.0 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="KT.webp" alt="">
+                <div style="font-size:20px;">ITEM AT ₹240</div>
+                <div>CASHEW TOMATO</div>
+                <div class="rating">⭐ 4.6 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="mc.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹240</div>
+                <div>Methi Chaman</div>
+                <div class="rating">⭐ 4.4 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="gp.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹180</div>
+                <div>Green Peas Masala</div>
+                <div class="rating">⭐ 4.2 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3></h3><br><br><br>
+                <img src="mx.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹200</div>
+                <div>Mixed Veg Curry</div>
+                <div class="rating">⭐ 4.7 • 5.0</div>
+               </div>
+
+               <div class="card">
+                <h3>ROTI</h3><br><br>
+                <img src="R.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹7</div>
+                <div>ROTI</div>
+                <div class="rating">⭐ 5.0 • 5.0</div>
+               </div>
+
+               <div class="card"></div>
+               <div class="card"></div>
+               <div class="card"></div>
+
+               <div class="card">
+                <h3>BIRIYANIS</h3><br><br>
+                <img src="PB.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹120</div>
+                <div>PLAIN BIRIYANI RICE</div>
+                <div class="rating">⭐ 4.5 • 5.0</div>
+               </div>
+
+                <div class="card">
+                <h3></h3><br><br><br>
+                <img src="VB.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹190</div>
+                <div>VEG BIRIYANI</div>
+                <div class="rating">⭐ 4.3 • 5.0</div>
+               </div>
+
+                <div class="card">
+                <h3></h3><br><br><br>
+                <img src="PAB.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹220</div>
+                <div>Paneer Biryani</div>
+                <div class="rating">⭐ 4.8 • 5.0</div>
+               </div>
+
+                <div class="card">
+                <h3></h3><br><br><br>
+                <img src="KB.jpg" alt="">
+                <div style="font-size:20px;">ITEM AT ₹220</div>
+                <div>CASHWEE BIRIYANI</div>
+                <div class="rating">⭐ 4.8 • 5.0</div>
+               </div>
+               <div></div>
+               <div></div>
+               <div></div>
+            </div>
+        <button class="btn" onclick="window.location.href='index.html';">GO TO HOME</button><br><br>
+        <div></div>
+    </body>
+</html>

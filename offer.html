@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>SKML</title>
+ <style>
+           
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#fafaf7;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;     
+    object-fit:cover;
+}
+
+.navbar{
+background:goldenrod;
+height:80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 60px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.banner{
+padding:35px 60px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:80px;         
+    margin-top:30px;
+    flex-wrap:wrap;    
+}
+
+
+.card{
+text-align:center;
+cursor:pointer;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.circle{
+width:120px;
+height:120px;
+border-radius:50%;
+overflow:hidden;
+box-shadow:0 5px 12px rgba(0,0,0,.15);
+margin:auto;
+}
+
+.circle img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.card h3{
+margin-top:15px;
+font-size:22px;
+font-weight:500;
+}
+
+.btn{
+    color:goldenrod;
+    align-items:center;
+    width:200px;
+    height:50px;
+    font-size:20px;
+}
+
+</style>
+    </head>
+    <body>
+       <div class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" class="logo" alt="SKML logo">
+            <h1>SKML FAMILY DHABA</h1>
+           </div>
+            <p>NH 16,Yelamanchili Road,Anakapalli</p>
+        </div>
+        <div class="banner"></div>
+        <h2 style="text-align: center;">Special discount on items today!</h2><br><br>
+
+        <div  style="text-align: center;">
+        <img src="01.jpg" style="width: 1000px; height: 300px; box-shadow: 0 5px 12px rgba(0,0,0,.15);"><br><br>
+        <img src="01.jpg" style="width: 1000px; height: 300px; box-shadow: 0 5px 12px rgba(0,0,0,.15);"><br><br>
+        <img src="01.jpg" style="width: 1000px; height: 300px; box-shadow: 0 5px 12px rgba(0,0,0,.15);"><br><br>
+        <button class="btn" onclick="window.location.href='index.html';">GO TO HOME</button><br><br>
+       </div>
+    </body>
+</html>
